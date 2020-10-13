@@ -1,0 +1,4 @@
+1)select Resolution, Price, Id from TV where Resolution > 1024;  
+2)select Id, Resolution from TV where Resolution = (SELECT MAX(Resolution) from TV);
+3)Select Brand, COUNT(*) as count from TV where Resolution = (SELECT MIN(Resolution) from TV) GROUP BY Brand;
+4)Select Brand, COUNT(*) as count from TV where Size <24 GROUP BY Brand;
