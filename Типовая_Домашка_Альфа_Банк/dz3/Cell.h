@@ -7,8 +7,7 @@
 
 #include <iostream>
 #include <ctime>
-#include <unistd.h>
-#define msleep(x) usleep(x * 1000)
+
 
 class Cell {
 public:
