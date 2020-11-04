@@ -45,7 +45,7 @@ void Cell :: print_cell() {
         }
         std::cout<<std::endl;
     }
-    msleep(1000);
+    _sleep(1000);
     for (int i = 0; i < 3; i++) {
         std::cout<<std::endl;
     }
