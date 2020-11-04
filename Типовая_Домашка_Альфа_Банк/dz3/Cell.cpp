@@ -12,6 +12,12 @@ Cell:: Cell(int rows, int cols) {
     }
 }
 Cell::~Cell() {
+    for (size_t i = 0; i < height+2; i++) {
+        delete[] old_field[i];
+        delete[] field[i];
+    }
+    delete[] old_field;
+    delete[] field;
     std::cout<<"Cell has been deleted"<<std::endl;
 } // деструктор
 void Cell :: transform (int k) {
